@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tamagotchi</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-  <img id="tamagochiImage" src="pixil-gif-otamanormal.gif" width="300" height="300">
-  
- 
-      <button onclick="tamagochi.alimentar()" class="oal">Alimentar</button>
-      <button onclick="tamagochi.brincar()" class="obr">Brincar</button>
-      <button onclick="tamagochi.dormir()" class="odo">Dormir</button>
-  <div id="status"></div>
-
-  <script>
-    const tamagochi = new Tamagochi("Otama");
-    
-    function changeImage(filename) {
-      let img = document.querySelector("#tamagochiImage");
-      img.setAttribute("src", filename);
-    }
-
-    tamagochi.mostrarStatus();
-  </script>
-  
+    <div class="container">
+        <h1>Otama</h1>
+        <div class="tamagochi-container">
+            <img id="tamagochiImage" src="pixil-gif-otamanormal.gif" alt="Tamagotchi">
+            <div id="status"></div>
+        </div>
+        <div class="buttons">
+            <button onclick="tamagochi.alimentar()" class="oalimentar">Alimentar</button>
+            <button onclick="tamagochi.brincar()" class="obrincar">Brincar</button>
+            <button onclick="tamagochi.cuidar()" class="ocuidar">Cuidar</button>
+            <button onclick="tamagochi.dormir()" class="odormir">Dormir</button>
+        </div>
+      
+        <div class="progress-bars">
+          
+  <div>
+     <label>Fome</label>
+     <progress id="fomeBar" value="50" max="100"></progress>
+  </div>
+          
+   <div>
+      <label>Felicidade</label>
+      <progress id="felicidadeBar" value="50" max="100"></progress>
+   </div>
+          
+    <div>
+      <label>Saúde</label>
+      <progress id="saudeBar" value="50" max="100"></progress>
+    </div>
+          
+     <div>
+        <label>Energia</label>
+        <progress id="energiaBar" value="50" max="100"></progress>
+     </div>
+          
+        </div>
+    </div>
 </body>
 
 </html>
