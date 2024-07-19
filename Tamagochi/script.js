@@ -50,7 +50,7 @@ class Tamagochi {
         this.saude = Math.min(100, this.saude + 30);
         this.felicidade = Math.min(100, this.felicidade + 5);
         this.fome = Math.max(0, this.fome - 2);
-        this.atualizarImagem("pixil-gif-otamanormal.gif", "pixil-gif-fantasmadormi.gif", "foi cuidado");
+        this.atualizarImagem("pixil-gif-otamanormal.gif", "otamacomsaude.gif.gif", "foi cuidado");
     }
 
     atualizarImagem(imagemNormal, imagemAcao, acao) {
