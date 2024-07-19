@@ -1,78 +1,106 @@
-html{
-  background-color: #E6E6FA;
-  
-}
 
 body {
-  text-align: center;
-  border:  solid 3px #A9A9A9;
-  padding: 1px;
-  border-radius: 10px;
-  background-color: #F0FFFF;
-  height: 53%;
-  width: 20%;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E6E6FA;
+    margin: 0;
 }
 
-img {
+.container {
+    text-align: center;
+}
+
+.tamagochi-container {
+    margin-bottom: 20px;
+}
+
+#tamagochiImage {
+    width: 200px;
+    height: 200px;
     display: block;
     margin: 0 auto 20px auto;
+    border: 1px solid #D8BFD8;
 }
 
-button{
-  padding: 5px;
-  border: none;
-  outline: none;
-  border-radius: 15px;
-  align-items: center;
-  margin: 0 auto 20px auto;
+.buttons {
+    margin: 20px 0;
 }
 
-.oal {
+.progress-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color:#E0FFFF;
+  border: 1px solid #B0E0E6;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #f3f3f3; 
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.oalimentar {
   background-color: #ddd;
-  border: none;
+  border: 1px solid #8B0000;
+  border-radius: 10px;
   color: black;
   padding: 10px 20px;
-  text-align: center;
-  font-size: 16px;
-  transition: 0.3s;
+  margin: 5px;
   cursor: pointer;
+  transition: 0.3s;
 }
-.oal:hover {
+.oalimentar:hover {
   background-color: #B22222;
   color: white;
 }
 
-.obr {
+.obrincar {
   background-color: #ddd;
-  border: none;
+  border: 1px solid  #C71585;
+  border-radius: 10px;
   color: black;
   padding: 10px 20px;
-  text-align: center;
-  font-size: 16px;
-  transition: 0.3s;
+  margin: 5px;
   cursor: pointer;
+  transition: 0.3s;
 }
-.obr:hover {
+.obrincar:hover {
   background-color: #FF1493;
   color: white;
 }
 
-.odo {
+.ocuidar {
   background-color: #ddd;
-  border: none;
+  border: 1px solid #2E8B57;
+  border-radius: 10px;
   color: black;
   padding: 10px 20px;
-  text-align: center;
-  font-size: 16px;
-  transition: 0.3s;
+  margin: 5px;
   cursor: pointer;
+  transition: 0.3s;
 }
-.odo:hover {
+.ocuidar:hover {
+  background-color: #3CB371;
+  color: white;
+}
+
+.odormir {
+  background-color: #ddd;
+  border: 1px solid #483D8B;
+  border-radius: 10px;
+  color: black;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.odormir:hover {
   background-color: #6A5ACD;
   color: white;
 }
