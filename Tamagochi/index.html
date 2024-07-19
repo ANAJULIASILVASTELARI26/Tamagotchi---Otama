@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <img id="tamagochiImage" src="pixil-gif-otamanormal.gif" width="300" height="300">
+  
+ 
+      <button onclick="tamagochi.alimentar()" class="oal">Alimentar</button>
+      <button onclick="tamagochi.brincar()" class="obr">Brincar</button>
+      <button onclick="tamagochi.dormir()" class="odo">Dormir</button>
+  <div id="status"></div>
+
+  <script>
+    const tamagochi = new Tamagochi("Otama");
+    
+    function changeImage(filename) {
+      let img = document.querySelector("#tamagochiImage");
+      img.setAttribute("src", filename);
+    }
+
+    tamagochi.mostrarStatus();
+  </script>
+  
+</body>
+
+</html>

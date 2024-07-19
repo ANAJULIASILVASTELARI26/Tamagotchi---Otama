@@ -1,0 +1,78 @@
+html{
+  background-color: #E6E6FA;
+  
+}
+
+body {
+  text-align: center;
+  border:  solid 3px #A9A9A9;
+  padding: 1px;
+  border-radius: 10px;
+  background-color: #F0FFFF;
+  height: 53%;
+  width: 20%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+button{
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  align-items: center;
+  margin: 0 auto 20px auto;
+}
+
+.oal {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.oal:hover {
+  background-color: #B22222;
+  color: white;
+}
+
+.obr {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.obr:hover {
+  background-color: #FF1493;
+  color: white;
+}
+
+.odo {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.odo:hover {
+  background-color: #6A5ACD;
+  color: white;
+}
